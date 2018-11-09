@@ -10,64 +10,64 @@
 		//If already exist without size in foundation add size prefix
 		$prefix: $prefix + '-';
 		.#{$prefix}align-left{
-			justify-content: flex-start;
+			justify-content: flex-start !important;
 		}
 
 		.#{$prefix}align-center{
-			justify-content: center;
+			justify-content: center !important;
 		}
 
 		.#{$prefix}align-right{
-			justify-content: flex-end;
+			justify-content: flex-end !important;
 		}
 
 		.#{$prefix}align-top{
-			align-items: flex-start;
+			align-items: flex-start !important;
 		}
 
 		.#{$prefix}align-middle{
-			align-items: center;
+			align-items: center !important;
 		}
 
 		.#{$prefix}align-bottom{
-			align-items: flex-end;
+			align-items: flex-end !important;
 		}
 
 		.#{$prefix}align-justify{
-			justify-content: space-between;
+			justify-content: space-between !important;
 		}
 
 		.#{$prefix}align-spaced{
-			justify-content: space-around;
+			justify-content: space-around !important;
 		}
 
 		.#{$prefix}text-left{
-			text-align: left;
+			text-align: left !important;
 		}
 
 		.#{$prefix}text-center{
-			text-align: center;
+			text-align: center !important;
 		}
 
 		.#{$prefix}text-right{
-			text-align: right;
+			text-align: right !important;
 		}
 
 		.#{$prefix}shrink{
-			flex: 0 0 auto;
-			max-width: 100%;
+			flex: 0 0 auto !important;
+			max-width: 100% !important;
 		}
 
 		.menu.#{$prefix}expanded{
-			display: table;
-			width: 100%;
-			table-layout: fixed;
+			display: table !important;
+			width: 100% !important;
+			table-layout: fixed !important;
 		}
 
 		.menu.#{$prefix}shrink{
-			display: block;
-			width: auto;
-			table-layout: auto;
+			display: block !important;
+			width: auto !important;
+			table-layout: auto !important;
 		}
 
 		@for $i from 1 through $grid-column-count {
@@ -88,11 +88,11 @@
 	}
 
 	.#{$prefix}td-shrink {
-		width: auto;
+		width: auto !important;
 	}
 
 	.#{$prefix}td-expand {
-		width: 100%;
+		width: 100% !important;
 	}
 
 	.#{$prefix}no-margin{
@@ -114,11 +114,11 @@
 	}
 
 	.#{$prefix}flex-wrap{
-		flex-wrap: wrap;
+		flex-wrap: wrap !important;
 	}
 
 	.#{$prefix}flex-nowrap{
-		flex-wrap: nowrap;
+		flex-wrap: nowrap !important;
 	}
 }
 
