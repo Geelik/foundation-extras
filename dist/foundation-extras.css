@@ -1,0 +1,269 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.0
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+.td-1 {
+  width: 8.33333%; }
+
+.td-2 {
+  width: 16.66667%; }
+
+.td-3 {
+  width: 25%; }
+
+.td-4 {
+  width: 33.33333%; }
+
+.td-5 {
+  width: 41.66667%; }
+
+.td-6 {
+  width: 50%; }
+
+.td-7 {
+  width: 58.33333%; }
+
+.td-8 {
+  width: 66.66667%; }
+
+.td-9 {
+  width: 75%; }
+
+.td-10 {
+  width: 83.33333%; }
+
+.td-11 {
+  width: 91.66667%; }
+
+.td-12 {
+  width: 100%; }
+
+.td-shrink {
+  width: auto; }
+
+.td-expand {
+  width: 100%; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.no-padding {
+  padding: 0 !important; }
+
+.no-h-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.no-v-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.flex-nowrap {
+  flex-wrap: nowrap; }
+
+@media print, screen and (min-width: 40em) {
+  .medium-align-left {
+    justify-content: flex-start; }
+  .medium-align-center {
+    justify-content: center; }
+  .medium-align-right {
+    justify-content: flex-end; }
+  .medium-align-top {
+    align-items: flex-start; }
+  .medium-align-middle {
+    align-items: center; }
+  .medium-align-bottom {
+    align-items: flex-end; }
+  .medium-align-justify {
+    justify-content: space-between; }
+  .medium-align-spaced {
+    justify-content: space-around; }
+  .medium-text-left {
+    text-align: left; }
+  .medium-text-center {
+    text-align: center; }
+  .medium-text-right {
+    text-align: right; }
+  .medium-shrink {
+    flex: 0 0 auto;
+    max-width: 100%; }
+  .menu.medium-expanded {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+  .menu.medium-shrink {
+    display: block;
+    width: auto;
+    table-layout: auto; }
+  .medium-order-1 {
+    order: 1; }
+  .medium-order-2 {
+    order: 2; }
+  .medium-order-3 {
+    order: 3; }
+  .medium-order-4 {
+    order: 4; }
+  .medium-order-5 {
+    order: 5; }
+  .medium-order-6 {
+    order: 6; }
+  .medium-order-7 {
+    order: 7; }
+  .medium-order-8 {
+    order: 8; }
+  .medium-order-9 {
+    order: 9; }
+  .medium-order-10 {
+    order: 10; }
+  .medium-order-11 {
+    order: 11; }
+  .medium-order-12 {
+    order: 12; }
+  .medium-td-1 {
+    width: 8.33333%; }
+  .medium-td-2 {
+    width: 16.66667%; }
+  .medium-td-3 {
+    width: 25%; }
+  .medium-td-4 {
+    width: 33.33333%; }
+  .medium-td-5 {
+    width: 41.66667%; }
+  .medium-td-6 {
+    width: 50%; }
+  .medium-td-7 {
+    width: 58.33333%; }
+  .medium-td-8 {
+    width: 66.66667%; }
+  .medium-td-9 {
+    width: 75%; }
+  .medium-td-10 {
+    width: 83.33333%; }
+  .medium-td-11 {
+    width: 91.66667%; }
+  .medium-td-12 {
+    width: 100%; }
+  .medium-td-shrink {
+    width: auto; }
+  .medium-td-expand {
+    width: 100%; }
+  .medium-no-margin {
+    margin: 0 !important; }
+  .medium-no-padding {
+    padding: 0 !important; }
+  .medium-no-h-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .medium-no-v-padding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
+  .medium-flex-wrap {
+    flex-wrap: wrap; }
+  .medium-flex-nowrap {
+    flex-wrap: nowrap; } }
+
+@media print, screen and (min-width: 64em) {
+  .large-align-left {
+    justify-content: flex-start; }
+  .large-align-center {
+    justify-content: center; }
+  .large-align-right {
+    justify-content: flex-end; }
+  .large-align-top {
+    align-items: flex-start; }
+  .large-align-middle {
+    align-items: center; }
+  .large-align-bottom {
+    align-items: flex-end; }
+  .large-align-justify {
+    justify-content: space-between; }
+  .large-align-spaced {
+    justify-content: space-around; }
+  .large-text-left {
+    text-align: left; }
+  .large-text-center {
+    text-align: center; }
+  .large-text-right {
+    text-align: right; }
+  .large-shrink {
+    flex: 0 0 auto;
+    max-width: 100%; }
+  .menu.large-expanded {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+  .menu.large-shrink {
+    display: block;
+    width: auto;
+    table-layout: auto; }
+  .large-order-1 {
+    order: 1; }
+  .large-order-2 {
+    order: 2; }
+  .large-order-3 {
+    order: 3; }
+  .large-order-4 {
+    order: 4; }
+  .large-order-5 {
+    order: 5; }
+  .large-order-6 {
+    order: 6; }
+  .large-order-7 {
+    order: 7; }
+  .large-order-8 {
+    order: 8; }
+  .large-order-9 {
+    order: 9; }
+  .large-order-10 {
+    order: 10; }
+  .large-order-11 {
+    order: 11; }
+  .large-order-12 {
+    order: 12; }
+  .large-td-1 {
+    width: 8.33333%; }
+  .large-td-2 {
+    width: 16.66667%; }
+  .large-td-3 {
+    width: 25%; }
+  .large-td-4 {
+    width: 33.33333%; }
+  .large-td-5 {
+    width: 41.66667%; }
+  .large-td-6 {
+    width: 50%; }
+  .large-td-7 {
+    width: 58.33333%; }
+  .large-td-8 {
+    width: 66.66667%; }
+  .large-td-9 {
+    width: 75%; }
+  .large-td-10 {
+    width: 83.33333%; }
+  .large-td-11 {
+    width: 91.66667%; }
+  .large-td-12 {
+    width: 100%; }
+  .large-td-shrink {
+    width: auto; }
+  .large-td-expand {
+    width: 100%; }
+  .large-no-margin {
+    margin: 0 !important; }
+  .large-no-padding {
+    padding: 0 !important; }
+  .large-no-h-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .large-no-v-padding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
+  .large-flex-wrap {
+    flex-wrap: wrap; }
+  .large-flex-nowrap {
+    flex-wrap: nowrap; } }

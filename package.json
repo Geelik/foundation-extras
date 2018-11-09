@@ -1,0 +1,17 @@
+{
+  "name": "foundation-extras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass ./src/foundation-extras.scss -o ./dist/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "foundation-sites": "^6.5.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

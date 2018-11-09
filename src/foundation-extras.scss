@@ -1,0 +1,128 @@
+@import 'variables';
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@mixin prefixWithSize($prefix){
+	
+	@if $prefix == 'small'{
+		$prefix: '';
+	}
+	@else{
+		//If already exist without size in foundation add size prefix
+		$prefix: $prefix + '-';
+		.#{$prefix}align-left{
+			justify-content: flex-start;
+		}
+
+		.#{$prefix}align-center{
+			justify-content: center;
+		}
+
+		.#{$prefix}align-right{
+			justify-content: flex-end;
+		}
+
+		.#{$prefix}align-top{
+			align-items: flex-start;
+		}
+
+		.#{$prefix}align-middle{
+			align-items: center;
+		}
+
+		.#{$prefix}align-bottom{
+			align-items: flex-end;
+		}
+
+		.#{$prefix}align-justify{
+			justify-content: space-between;
+		}
+
+		.#{$prefix}align-spaced{
+			justify-content: space-around;
+		}
+
+		.#{$prefix}text-left{
+			text-align: left;
+		}
+
+		.#{$prefix}text-center{
+			text-align: center;
+		}
+
+		.#{$prefix}text-right{
+			text-align: right;
+		}
+
+		.#{$prefix}shrink{
+			flex: 0 0 auto;
+			max-width: 100%;
+		}
+
+		.menu.#{$prefix}expanded{
+			display: table;
+			width: 100%;
+			table-layout: fixed;
+		}
+
+		.menu.#{$prefix}shrink{
+			display: block;
+			width: auto;
+			table-layout: auto;
+		}
+
+		@for $i from 1 through $grid-column-count {
+
+			.#{$prefix}order-#{$i}{
+				order: $i;
+			}
+
+		}
+	}
+
+	//Add extra class
+	@for $i from 1 through $grid-column-count {
+		// Sizing (percentage)
+		.#{$prefix}td-#{$i} {
+			width: grid-column($i);
+		}
+	}
+
+	.#{$prefix}td-shrink {
+		width: auto;
+	}
+
+	.#{$prefix}td-expand {
+		width: 100%;
+	}
+
+	.#{$prefix}no-margin{
+		margin: 0 !important;
+	}
+
+	.#{$prefix}no-padding{
+		padding: 0 !important;
+	}
+
+	.#{$prefix}no-h-padding{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.#{$prefix}no-v-padding{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
+	.#{$prefix}flex-wrap{
+		flex-wrap: wrap;
+	}
+
+	.#{$prefix}flex-nowrap{
+		flex-wrap: nowrap;
+	}
+}
+
+
+@include -zf-each-breakpoint {
+	@include prefixWithSize($-zf-size);
+}
