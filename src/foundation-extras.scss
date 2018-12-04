@@ -99,6 +99,16 @@
 		margin: 0 !important;
 	}
 
+	.#{$prefix}no-h-margin{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.#{$prefix}no-v-margin{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
 	.#{$prefix}no-padding{
 		padding: 0 !important;
 	}
@@ -119,6 +129,36 @@
 
 	.#{$prefix}flex-nowrap{
 		flex-wrap: nowrap !important;
+	}
+
+	//add margins classes
+	@for $i from 1 through 10 {
+		$value: $i*5;
+		.#{$prefix}margin-top-#{$value}{
+			margin-top: $value * 1px;
+		}
+
+		.#{$prefix}margin-right-#{$value}{
+			 margin-right: $value * 1px;
+	 	}
+
+		.#{$prefix}margin-bottom-#{$value}{
+			 margin-bottom: $value * 1px;
+	 	}
+
+		.#{$prefix}margin-left-#{$value}{
+			margin-left: $value * 1px;
+		}
+
+		.#{$prefix}margin-h-#{$value}{
+			margin-left:$value * 1px;
+			margin-right: $value * 1px;
+		}
+
+		.#{$prefix}margin-h-#{$value}{
+			margin-top: $value * 1px;
+			margin-bottom: $value * 1px;
+		}
 	}
 }
 
