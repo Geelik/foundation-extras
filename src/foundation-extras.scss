@@ -76,6 +76,9 @@
 				order: $i;
 			}
 
+			.#{$prefix}offset-r-#{$i}{
+				margin-right: grid-column($i);
+			}
 		}
 	}
 

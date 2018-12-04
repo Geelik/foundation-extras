@@ -331,28 +331,52 @@
     table-layout: auto !important; }
   .medium-order-1 {
     order: 1; }
+  .medium-offset-r-1 {
+    margin-right: 8.33333%; }
   .medium-order-2 {
     order: 2; }
+  .medium-offset-r-2 {
+    margin-right: 16.66667%; }
   .medium-order-3 {
     order: 3; }
+  .medium-offset-r-3 {
+    margin-right: 25%; }
   .medium-order-4 {
     order: 4; }
+  .medium-offset-r-4 {
+    margin-right: 33.33333%; }
   .medium-order-5 {
     order: 5; }
+  .medium-offset-r-5 {
+    margin-right: 41.66667%; }
   .medium-order-6 {
     order: 6; }
+  .medium-offset-r-6 {
+    margin-right: 50%; }
   .medium-order-7 {
     order: 7; }
+  .medium-offset-r-7 {
+    margin-right: 58.33333%; }
   .medium-order-8 {
     order: 8; }
+  .medium-offset-r-8 {
+    margin-right: 66.66667%; }
   .medium-order-9 {
     order: 9; }
+  .medium-offset-r-9 {
+    margin-right: 75%; }
   .medium-order-10 {
     order: 10; }
+  .medium-offset-r-10 {
+    margin-right: 83.33333%; }
   .medium-order-11 {
     order: 11; }
+  .medium-offset-r-11 {
+    margin-right: 91.66667%; }
   .medium-order-12 {
     order: 12; }
+  .medium-offset-r-12 {
+    margin-right: 100%; }
   .medium-td-1 {
     width: 8.33333%; }
   .medium-td-2 {
@@ -592,28 +616,52 @@
     table-layout: auto !important; }
   .large-order-1 {
     order: 1; }
+  .large-offset-r-1 {
+    margin-right: 8.33333%; }
   .large-order-2 {
     order: 2; }
+  .large-offset-r-2 {
+    margin-right: 16.66667%; }
   .large-order-3 {
     order: 3; }
+  .large-offset-r-3 {
+    margin-right: 25%; }
   .large-order-4 {
     order: 4; }
+  .large-offset-r-4 {
+    margin-right: 33.33333%; }
   .large-order-5 {
     order: 5; }
+  .large-offset-r-5 {
+    margin-right: 41.66667%; }
   .large-order-6 {
     order: 6; }
+  .large-offset-r-6 {
+    margin-right: 50%; }
   .large-order-7 {
     order: 7; }
+  .large-offset-r-7 {
+    margin-right: 58.33333%; }
   .large-order-8 {
     order: 8; }
+  .large-offset-r-8 {
+    margin-right: 66.66667%; }
   .large-order-9 {
     order: 9; }
+  .large-offset-r-9 {
+    margin-right: 75%; }
   .large-order-10 {
     order: 10; }
+  .large-offset-r-10 {
+    margin-right: 83.33333%; }
   .large-order-11 {
     order: 11; }
+  .large-offset-r-11 {
+    margin-right: 91.66667%; }
   .large-order-12 {
     order: 12; }
+  .large-offset-r-12 {
+    margin-right: 100%; }
   .large-td-1 {
     width: 8.33333%; }
   .large-td-2 {
