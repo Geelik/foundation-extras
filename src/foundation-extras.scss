@@ -143,6 +143,23 @@
 		position: fixed !important;
 	}
 
+	//add display classes
+	.#{$prefix}d-block{
+		display: block !important;
+	}
+
+	.#{$prefix}d-inline-block{
+		display: inline-block !important;
+	}
+
+	.#{$prefix}d-inline{
+		display: inline !important;
+	}
+
+	.#{$prefix}d-flex{
+		display: flex !important;
+	}
+
 	//add margins classes
 	@for $i from 1 through 10 {
 		$value: $i*5;
