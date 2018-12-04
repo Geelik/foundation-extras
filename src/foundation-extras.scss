@@ -131,6 +131,18 @@
 		flex-wrap: nowrap !important;
 	}
 
+	.#{$prefix}position-absolute{
+		position: absolute !important;
+	}
+
+	.#{$prefix}position-relative{
+		position: relative !important;
+	}
+
+	.#{$prefix}position-fixed{
+		position: fixed !important;
+	}
+
 	//add margins classes
 	@for $i from 1 through 10 {
 		$value: $i*5;

@@ -74,6 +74,15 @@
 .flex-nowrap {
   flex-wrap: nowrap !important; }
 
+.position-absolute {
+  position: absolute !important; }
+
+.position-relative {
+  position: relative !important; }
+
+.position-fixed {
+  position: fixed !important; }
+
 .margin-top-5 {
   margin-top: 5px; }
 
@@ -90,7 +99,7 @@
   margin-left: 5px;
   margin-right: 5px; }
 
-.margin-h-5 {
+.margin-v-5 {
   margin-top: 5px;
   margin-bottom: 5px; }
 
@@ -110,7 +119,7 @@
   margin-left: 10px;
   margin-right: 10px; }
 
-.margin-h-10 {
+.margin-v-10 {
   margin-top: 10px;
   margin-bottom: 10px; }
 
@@ -130,7 +139,7 @@
   margin-left: 15px;
   margin-right: 15px; }
 
-.margin-h-15 {
+.margin-v-15 {
   margin-top: 15px;
   margin-bottom: 15px; }
 
@@ -150,7 +159,7 @@
   margin-left: 20px;
   margin-right: 20px; }
 
-.margin-h-20 {
+.margin-v-20 {
   margin-top: 20px;
   margin-bottom: 20px; }
 
@@ -170,7 +179,7 @@
   margin-left: 25px;
   margin-right: 25px; }
 
-.margin-h-25 {
+.margin-v-25 {
   margin-top: 25px;
   margin-bottom: 25px; }
 
@@ -190,7 +199,7 @@
   margin-left: 30px;
   margin-right: 30px; }
 
-.margin-h-30 {
+.margin-v-30 {
   margin-top: 30px;
   margin-bottom: 30px; }
 
@@ -210,7 +219,7 @@
   margin-left: 35px;
   margin-right: 35px; }
 
-.margin-h-35 {
+.margin-v-35 {
   margin-top: 35px;
   margin-bottom: 35px; }
 
@@ -230,7 +239,7 @@
   margin-left: 40px;
   margin-right: 40px; }
 
-.margin-h-40 {
+.margin-v-40 {
   margin-top: 40px;
   margin-bottom: 40px; }
 
@@ -250,7 +259,7 @@
   margin-left: 45px;
   margin-right: 45px; }
 
-.margin-h-45 {
+.margin-v-45 {
   margin-top: 45px;
   margin-bottom: 45px; }
 
@@ -270,7 +279,7 @@
   margin-left: 50px;
   margin-right: 50px; }
 
-.margin-h-50 {
+.margin-v-50 {
   margin-top: 50px;
   margin-bottom: 50px; }
 
@@ -380,6 +389,12 @@
     flex-wrap: wrap !important; }
   .medium-flex-nowrap {
     flex-wrap: nowrap !important; }
+  .medium-position-absolute {
+    position: absolute !important; }
+  .medium-position-relative {
+    position: relative !important; }
+  .medium-position-fixed {
+    position: fixed !important; }
   .medium-margin-top-5 {
     margin-top: 5px; }
   .medium-margin-right-5 {
@@ -391,7 +406,7 @@
   .medium-margin-h-5 {
     margin-left: 5px;
     margin-right: 5px; }
-  .medium-margin-h-5 {
+  .medium-margin-v-5 {
     margin-top: 5px;
     margin-bottom: 5px; }
   .medium-margin-top-10 {
@@ -405,7 +420,7 @@
   .medium-margin-h-10 {
     margin-left: 10px;
     margin-right: 10px; }
-  .medium-margin-h-10 {
+  .medium-margin-v-10 {
     margin-top: 10px;
     margin-bottom: 10px; }
   .medium-margin-top-15 {
@@ -419,7 +434,7 @@
   .medium-margin-h-15 {
     margin-left: 15px;
     margin-right: 15px; }
-  .medium-margin-h-15 {
+  .medium-margin-v-15 {
     margin-top: 15px;
     margin-bottom: 15px; }
   .medium-margin-top-20 {
@@ -433,7 +448,7 @@
   .medium-margin-h-20 {
     margin-left: 20px;
     margin-right: 20px; }
-  .medium-margin-h-20 {
+  .medium-margin-v-20 {
     margin-top: 20px;
     margin-bottom: 20px; }
   .medium-margin-top-25 {
@@ -447,7 +462,7 @@
   .medium-margin-h-25 {
     margin-left: 25px;
     margin-right: 25px; }
-  .medium-margin-h-25 {
+  .medium-margin-v-25 {
     margin-top: 25px;
     margin-bottom: 25px; }
   .medium-margin-top-30 {
@@ -461,7 +476,7 @@
   .medium-margin-h-30 {
     margin-left: 30px;
     margin-right: 30px; }
-  .medium-margin-h-30 {
+  .medium-margin-v-30 {
     margin-top: 30px;
     margin-bottom: 30px; }
   .medium-margin-top-35 {
@@ -475,7 +490,7 @@
   .medium-margin-h-35 {
     margin-left: 35px;
     margin-right: 35px; }
-  .medium-margin-h-35 {
+  .medium-margin-v-35 {
     margin-top: 35px;
     margin-bottom: 35px; }
   .medium-margin-top-40 {
@@ -489,7 +504,7 @@
   .medium-margin-h-40 {
     margin-left: 40px;
     margin-right: 40px; }
-  .medium-margin-h-40 {
+  .medium-margin-v-40 {
     margin-top: 40px;
     margin-bottom: 40px; }
   .medium-margin-top-45 {
@@ -503,7 +518,7 @@
   .medium-margin-h-45 {
     margin-left: 45px;
     margin-right: 45px; }
-  .medium-margin-h-45 {
+  .medium-margin-v-45 {
     margin-top: 45px;
     margin-bottom: 45px; }
   .medium-margin-top-50 {
@@ -517,7 +532,7 @@
   .medium-margin-h-50 {
     margin-left: 50px;
     margin-right: 50px; }
-  .medium-margin-h-50 {
+  .medium-margin-v-50 {
     margin-top: 50px;
     margin-bottom: 50px; } }
 
@@ -627,6 +642,12 @@
     flex-wrap: wrap !important; }
   .large-flex-nowrap {
     flex-wrap: nowrap !important; }
+  .large-position-absolute {
+    position: absolute !important; }
+  .large-position-relative {
+    position: relative !important; }
+  .large-position-fixed {
+    position: fixed !important; }
   .large-margin-top-5 {
     margin-top: 5px; }
   .large-margin-right-5 {
@@ -638,7 +659,7 @@
   .large-margin-h-5 {
     margin-left: 5px;
     margin-right: 5px; }
-  .large-margin-h-5 {
+  .large-margin-v-5 {
     margin-top: 5px;
     margin-bottom: 5px; }
   .large-margin-top-10 {
@@ -652,7 +673,7 @@
   .large-margin-h-10 {
     margin-left: 10px;
     margin-right: 10px; }
-  .large-margin-h-10 {
+  .large-margin-v-10 {
     margin-top: 10px;
     margin-bottom: 10px; }
   .large-margin-top-15 {
@@ -666,7 +687,7 @@
   .large-margin-h-15 {
     margin-left: 15px;
     margin-right: 15px; }
-  .large-margin-h-15 {
+  .large-margin-v-15 {
     margin-top: 15px;
     margin-bottom: 15px; }
   .large-margin-top-20 {
@@ -680,7 +701,7 @@
   .large-margin-h-20 {
     margin-left: 20px;
     margin-right: 20px; }
-  .large-margin-h-20 {
+  .large-margin-v-20 {
     margin-top: 20px;
     margin-bottom: 20px; }
   .large-margin-top-25 {
@@ -694,7 +715,7 @@
   .large-margin-h-25 {
     margin-left: 25px;
     margin-right: 25px; }
-  .large-margin-h-25 {
+  .large-margin-v-25 {
     margin-top: 25px;
     margin-bottom: 25px; }
   .large-margin-top-30 {
@@ -708,7 +729,7 @@
   .large-margin-h-30 {
     margin-left: 30px;
     margin-right: 30px; }
-  .large-margin-h-30 {
+  .large-margin-v-30 {
     margin-top: 30px;
     margin-bottom: 30px; }
   .large-margin-top-35 {
@@ -722,7 +743,7 @@
   .large-margin-h-35 {
     margin-left: 35px;
     margin-right: 35px; }
-  .large-margin-h-35 {
+  .large-margin-v-35 {
     margin-top: 35px;
     margin-bottom: 35px; }
   .large-margin-top-40 {
@@ -736,7 +757,7 @@
   .large-margin-h-40 {
     margin-left: 40px;
     margin-right: 40px; }
-  .large-margin-h-40 {
+  .large-margin-v-40 {
     margin-top: 40px;
     margin-bottom: 40px; }
   .large-margin-top-45 {
@@ -750,7 +771,7 @@
   .large-margin-h-45 {
     margin-left: 45px;
     margin-right: 45px; }
-  .large-margin-h-45 {
+  .large-margin-v-45 {
     margin-top: 45px;
     margin-bottom: 45px; }
   .large-margin-top-50 {
@@ -764,6 +785,6 @@
   .large-margin-h-50 {
     margin-left: 50px;
     margin-right: 50px; }
-  .large-margin-h-50 {
+  .large-margin-v-50 {
     margin-top: 50px;
     margin-bottom: 50px; } }
