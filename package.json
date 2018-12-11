@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass ./src/foundation-extras.scss -o ./dist/"
+    "build": "parcel build ./src/foundation-extras.scss --out-file ./dist/foundation-extras.css --no-source-maps --no-cache | parcel build src/foundation-extras.js --out-file dist/foundation-extras.js --no-source-maps --no-cache"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,9 @@
     "foundation-sites": "^6.5.0"
   },
   "devDependencies": {
-    "node-sass": "^4.10.0"
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "node-sass": "^4.10.0",
+    "parcel-bundler": "^1.10.3"
   }
 }

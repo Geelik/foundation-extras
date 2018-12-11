@@ -1,19 +1,21 @@
 Sommaire                                                     
 =================                                                        
-                                                                         
-   * [Sommaire](#sommaire)                                               
-   * [Description](#description)                                         
-   * [Mobile first](#mobile-first)                                       
-   * [Classes](#classes)                                                 
-      * [alignement](#alignement)                                        
-      * [Alignement du texte](#alignement-du-texte)                      
-      * [Colonnes](#colonnes)                                            
-      * [Tableaux](#tableaux)                                            
-      * [Marges extérieures](#marges-extérieures)                      
-      * [Marges intérieures](#marges-intérieures)                      
-      * [Flexbox](#flexbox)                                              
-      * [Positions](#positions)                                          
-      * [Display](#display)                                                                              
+
+   * [Sommaire](#sommaire)
+   * [Description](#description)
+   * [Mobile first](#mobile-first)
+   * [Classes](#classes)
+      * [Alignement](#alignement)
+      * [Alignement du texte](#alignement-du-texte)
+      * [Colonnes](#colonnes)
+      * [Tableaux](#tableaux)
+      * [Marges extérieures](#marges-extérieures)
+      * [Marges intérieures](#marges-intérieures)
+      * [Flexbox](#flexbox)
+      * [Positions](#positions)
+      * [Display](#display)
+   * [Javascript](#javascript)
+      * [Événements](#événements)                                                                          
 
 # Description
 
@@ -49,7 +51,7 @@ Le préfixe `small-` est absent car c'est le style par défaut appliqué.
 
 Toutes ces classes peuvent être préfixées par taille comme ci-dessus.
 
-## alignement
+## Alignement
 
 A mettre sur les `.row` pour changer l'alignement selon la taille.
 
@@ -158,3 +160,26 @@ Défini le display en fonction de la taille.
 `.d-inline-block`
 `.d-inline`
 `.d-flex`
+
+# Javascript
+
+## Événements
+
+Détect le changement de breakpoint
+```js
+/*
+@var sFromSize string small | medium | large 
+@description sFromSize est la taille avant changement
+ */
+$(window).on('mq:change:small', function(oEvt, sFromSize){
+    console.log('small');
+})
+
+$(window).on('mq:change:medium', function(oEvt, sFromSize){
+    console.log('medium');
+})
+
+$(window).on('mq:change:large', function(oEvt, sFromSize){
+    console.log('large');
+})
+```
