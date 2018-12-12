@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build ./src/foundation-extras.scss --out-file ./dist/foundation-extras.css --no-source-maps --no-cache | parcel build src/foundation-extras.js --out-file dist/foundation-extras.js --no-source-maps --no-cache"
+    "build": "parcel build ./src/foundation-extras.scss --out-file ./dist/foundation-extras.css --no-source-maps --no-cache && parcel build src/foundation-extras.js --out-file dist/foundation-extras.js --no-source-maps --no-cache"
   },
   "author": "",
   "license": "ISC",
