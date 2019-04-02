@@ -32,8 +32,14 @@ Foundation-extras utilise les breakpoints par défaut de foundation
 /* Medium and up */
 @media screen and (min-width: 40em) {}
 
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
 /* Large and up */
 @media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 ```
 
 Toutes les classes ajoutées sont sous le même format.
@@ -41,8 +47,11 @@ Toutes les classes ajoutées sont sous le même format.
 ```css
 /* Exemple */
 .no-margin
+.small-only-no-margin
 .medium-no-margin
+.medium-only-no-margin
 .large-no-margin
+.large-only-no-margin
 ```
 
 Le préfixe `small-` est absent car c'est le style par défaut appliqué.
