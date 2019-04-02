@@ -1,84 +1,77 @@
 @import 'variables';
 @import 'node_modules/foundation-sites/scss/foundation';
 
-@mixin prefixWithSize($prefix){
-	
-	@if $prefix == 'small'{
-		$prefix: '';
+@mixin getCss($prefix)
+{
+	.#{$prefix}align-left {
+		justify-content: flex-start !important;
 	}
-	@else{
-		//If already exist without size in foundation add size prefix
-		$prefix: $prefix + '-';
-		.#{$prefix}align-left{
-			justify-content: flex-start !important;
+
+	.#{$prefix}align-center {
+		justify-content: center !important;
+	}
+
+	.#{$prefix}align-right {
+		justify-content: flex-end !important;
+	}
+
+	.#{$prefix}align-top {
+		align-items: flex-start !important;
+	}
+
+	.#{$prefix}align-middle {
+		align-items: center !important;
+	}
+
+	.#{$prefix}align-bottom {
+		align-items: flex-end !important;
+	}
+
+	.#{$prefix}align-justify {
+		justify-content: space-between !important;
+	}
+
+	.#{$prefix}align-spaced {
+		justify-content: space-around !important;
+	}
+
+	.#{$prefix}text-left {
+		text-align: left !important;
+	}
+
+	.#{$prefix}text-center {
+		text-align: center !important;
+	}
+
+	.#{$prefix}text-right {
+		text-align: right !important;
+	}
+
+	.#{$prefix}shrink {
+		flex: 0 0 auto !important;
+		max-width: 100% !important;
+	}
+
+	.menu.#{$prefix}expanded {
+		display: table !important;
+		width: 100% !important;
+		table-layout: fixed !important;
+	}
+
+	.menu.#{$prefix}shrink {
+		display: block !important;
+		width: auto !important;
+		table-layout: auto !important;
+	}
+
+	@for $i from 1 through $grid-column-count {
+
+		.#{$prefix}order-#{$i} {
+			order: $i;
 		}
 
-		.#{$prefix}align-center{
-			justify-content: center !important;
-		}
-
-		.#{$prefix}align-right{
-			justify-content: flex-end !important;
-		}
-
-		.#{$prefix}align-top{
-			align-items: flex-start !important;
-		}
-
-		.#{$prefix}align-middle{
-			align-items: center !important;
-		}
-
-		.#{$prefix}align-bottom{
-			align-items: flex-end !important;
-		}
-
-		.#{$prefix}align-justify{
-			justify-content: space-between !important;
-		}
-
-		.#{$prefix}align-spaced{
-			justify-content: space-around !important;
-		}
-
-		.#{$prefix}text-left{
-			text-align: left !important;
-		}
-
-		.#{$prefix}text-center{
-			text-align: center !important;
-		}
-
-		.#{$prefix}text-right{
-			text-align: right !important;
-		}
-
-		.#{$prefix}shrink{
-			flex: 0 0 auto !important;
-			max-width: 100% !important;
-		}
-
-		.menu.#{$prefix}expanded{
-			display: table !important;
-			width: 100% !important;
-			table-layout: fixed !important;
-		}
-
-		.menu.#{$prefix}shrink{
-			display: block !important;
-			width: auto !important;
-			table-layout: auto !important;
-		}
-
-		@for $i from 1 through $grid-column-count {
-
-			.#{$prefix}order-#{$i}{
-				order: $i;
-			}
-
-			.#{$prefix}offset-r-#{$i}{
-				margin-right: grid-column($i);
-			}
+		.#{$prefix}offset-r-#{$i} {
+			margin-right: grid-column($i);
 		}
 	}
 
@@ -98,103 +91,125 @@
 		width: 100% !important;
 	}
 
-	.#{$prefix}no-margin{
+	.#{$prefix}no-margin {
 		margin: 0 !important;
 	}
 
-	.#{$prefix}no-h-margin{
+	.#{$prefix}no-h-margin {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 	}
 
-	.#{$prefix}no-v-margin{
+	.#{$prefix}no-v-margin {
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
 	}
 
-	.#{$prefix}no-padding{
+	.#{$prefix}no-padding {
 		padding: 0 !important;
 	}
 
-	.#{$prefix}no-h-padding{
+	.#{$prefix}no-h-padding {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
 
-	.#{$prefix}no-v-padding{
+	.#{$prefix}no-v-padding {
 		padding-top: 0 !important;
 		padding-bottom: 0 !important;
 	}
 
-	.#{$prefix}flex-wrap{
+	.#{$prefix}flex-wrap {
 		flex-wrap: wrap !important;
 	}
 
-	.#{$prefix}flex-nowrap{
+	.#{$prefix}flex-nowrap {
 		flex-wrap: nowrap !important;
 	}
 
-	.#{$prefix}position-absolute{
+	.#{$prefix}position-absolute {
 		position: absolute !important;
 	}
 
-	.#{$prefix}position-relative{
+	.#{$prefix}position-relative {
 		position: relative !important;
 	}
 
-	.#{$prefix}position-fixed{
+	.#{$prefix}position-fixed {
 		position: fixed !important;
 	}
 
 	//add display classes
-	.#{$prefix}d-block{
+	.#{$prefix}d-block {
 		display: block !important;
 	}
 
-	.#{$prefix}d-inline-block{
+	.#{$prefix}d-inline-block {
 		display: inline-block !important;
 	}
 
-	.#{$prefix}d-inline{
+	.#{$prefix}d-inline {
 		display: inline !important;
 	}
 
-	.#{$prefix}d-flex{
+	.#{$prefix}d-flex {
 		display: flex !important;
 	}
 
 	//add margins classes
 	@for $i from 1 through 10 {
 		$value: $i*5;
-		.#{$prefix}margin-top-#{$value}{
+		.#{$prefix}margin-top-#{$value} {
 			margin-top: $value * 1px;
 		}
 
-		.#{$prefix}margin-right-#{$value}{
-			 margin-right: $value * 1px;
-	 	}
-
-		.#{$prefix}margin-bottom-#{$value}{
-			 margin-bottom: $value * 1px;
-	 	}
-
-		.#{$prefix}margin-left-#{$value}{
-			margin-left: $value * 1px;
-		}
-
-		.#{$prefix}margin-h-#{$value}{
-			margin-left:$value * 1px;
+		.#{$prefix}margin-right-#{$value} {
 			margin-right: $value * 1px;
 		}
 
-		.#{$prefix}margin-v-#{$value}{
+		.#{$prefix}margin-bottom-#{$value} {
+			margin-bottom: $value * 1px;
+		}
+
+		.#{$prefix}margin-left-#{$value} {
+			margin-left: $value * 1px;
+		}
+
+		.#{$prefix}margin-h-#{$value} {
+			margin-left: $value * 1px;
+			margin-right: $value * 1px;
+		}
+
+		.#{$prefix}margin-v-#{$value} {
 			margin-top: $value * 1px;
 			margin-bottom: $value * 1px;
 		}
 	}
 }
 
+@mixin prefixWithSize($size) {
+	$prefix: '';
+	$prefix-only: '';
 
-@include -zf-each-breakpoint {
-	@include prefixWithSize($-zf-size);
+	@if $size == 'small'
+	{
+		$prefix-only: 'small-only-';
+	}
+	@else
+	{
+		$prefix: $size + '-';
+		$prefix-only: $size+'-only-';
+	}
+
+	@include breakpoint($size only){
+		@include getCss($prefix-only);
+	}
+
+	@include breakpoint($size){
+		@include getCss($prefix);
+	}
 }
+
+@include prefixWithSize('small');
+@include prefixWithSize('medium');
+@include prefixWithSize('large');
