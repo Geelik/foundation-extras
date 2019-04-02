@@ -139,6 +139,10 @@
 		position: fixed !important;
 	}
 
+	.#{$prefix}position-static{
+		position: static !important;
+	}
+
 	//add display classes
 	.#{$prefix}d-block {
 		display: block !important;
@@ -154,6 +158,10 @@
 
 	.#{$prefix}d-flex {
 		display: flex !important;
+	}
+
+	.#{$prefix}d-none{
+		display: none;
 	}
 
 	//add margins classes
